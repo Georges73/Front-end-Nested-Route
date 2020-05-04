@@ -1,0 +1,21 @@
+<h1>Account Details Page</h1>
+
+<h3>
+product : {{account.name}} <br>
+price : {{ account.email}} </h3>
+
+
+<ul class="nav navbar-nav">
+    <li><a [routerLink]="['overview']" routerLinkActive="active">OverView </a></li>
+    <li><a [routerLink]="['spec']" routerLinkActive="active">Specification </a></li>
+</ul>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+<p>
+  <button class="btn btn-default" (click)="onBack()">Back Using Router.navigate </button>
+</p>
